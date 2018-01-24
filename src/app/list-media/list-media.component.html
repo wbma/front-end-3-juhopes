@@ -1,3 +1,11 @@
+<div *ngFor="let stop of sdopArray">
+    
+    <ul>
+      <li *ngFor="let route of stop.patterns">
+      {{route.name}}</li>
+    </ul>
+  </div>
+
 <p>
  {{printThis}}
 </p>
