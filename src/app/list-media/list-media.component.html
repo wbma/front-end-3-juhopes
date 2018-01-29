@@ -1,5 +1,5 @@
 <div *ngFor="let stop of sdopArray">
-    
+
     <ul>
       <li *ngFor="let route of stop.patterns">
       {{route.name}}</li>
@@ -12,7 +12,7 @@
 <ul>
    <li *ngFor="let media of mediaArray">
       <img [src]="mediaService.mediaUrl + media.thumbnail">
-      <h4>Title</h4>
-      <p>Description</p>
+      <h4>{{media.title}}</h4>
+      <p>{{media.description}}</p>
     </li>
 </ul>
